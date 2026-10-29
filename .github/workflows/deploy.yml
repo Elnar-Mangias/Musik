@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install --legacy-peer-deps
-      - run: node node_modules/vite/bin/vite.js build
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
